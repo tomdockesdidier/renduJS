@@ -7,16 +7,37 @@ function getData() {
         return response.json();
       })
       .then((data) => {
-        tout(data.nomEntreprise, data.slogan, data.bouton);
+        start(data["nomEntreprise"], data["slogan"], data["bouton"]);
         produits(data["produits"]);
-        
+        avantages(data["listeBeneficesClients"]);
+        avis(data["clients"]);
       })
       .catch((error) => console.error('Erreur lors de la lecture des données :', error));
   }
 
-function tout(nom, slogan, bouton) {
-    console.log("error");
-    
+function start(nom, slogan, bouton) {
+    let Lstart=document.getElementById("start");
+    Lstart.innerHTML+=`
+        <div>
+            <h1>${nom}</h1>
+            <p>${slogan}</p>
+        </div>
+        <button>${bouton}</button>
+        `;
+}
+
+function avantages(truc) {
+    let Lavantages=document.getElementById("avantages");
+    let ul=document.createElement("ul");
+    ul.id="Lavantage"
+    Lavantages.appendChild(ul);
+    truc.forEach(element => {
+        ul.innerHTML+=`
+        <li>
+            <p>${element}</p>
+        </li>
+        `;
+    });
 }
 
 function produits(produits) {    
@@ -24,14 +45,28 @@ function produits(produits) {
     produits.forEach(element => {
         Lproduits.innerHTML+=`
         <div class="produit">
-            <img src="${element["image-url"]}">
+            <img class="Pimg" src="${element["image-url"]}">
             <div>
                 <h3>${element["titre"]}</h3>
                 <p>${element["presentation"]}</p>
             </div>
         </div>
         `;
-    console.log(Lproduits);
+    });
+}
+
+function avis(avis) {
+    let Lavis=document.getElementById("clients");
+    avis.forEach(element => {
+        Lavis.innerHTML+=`
+        <div class="client">
+            <h3>
+                ${element["nom"]}
+            </h3>
+            <p class="titre">${element["typePrestation"]}</p>
+            <p>${element["commentaire"]}</p>
+        </div>
+        `;
     });
 }
 

@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding:0;
     background-color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 header {
@@ -12,26 +13,30 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: #000000;
     .bandehaut {
         margin:0;
         .barrenav {
             list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
             li {
                 float: left;
-                width: 8.5em;
+                width: 6em;
                 list-style: none;
-                margin-left: 50px;
-    
+                background-color: #ffffff;
+                border-radius: 10px;
                 a {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 2.5em;
-                    color: #3af430d7;
+                    color: #000000d7;
                     text-decoration: none;
                     border-radius: 10px;
-                    box-shadow: 0 0 8px #13610d;
-                    border: 1.5px solid #13610d;
+                    box-shadow: 0 0 8px #ffffff;
+                    border: 1.5px solid #000000;
                     p {
                         font-size: 1.2em;
                     }
@@ -42,7 +47,134 @@ header {
                     transition-duration: 500ms;
                     box-shadow: 0 0 10px #13610d;
                 }
+
+                #logo {
+                    margin-left: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 30px;
+                    font-weight: bolder;
+                    color: #ffffff;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
     
+            }
+        }
+    }
+    #logo {
+        position: absolute;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #ffffff;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+main {
+    margin-right:15%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    #start {
+        color: white;
+        height: 300px;
+        background-image:url(images/chocolatedessert.png);
+        /* text-shadow: 0 0 10px white, 0 0 10px white; */
+        -webkit-text-stroke: 0.3px rgb(0, 0, 0) ;
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 250px;
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            height: 50px;
+            background-color: white;
+            border-radius: 20px;
+            border: none;
+            width : 150px;
+
+        }
+    }
+    #avantages {
+        #Lavantage {
+            list-style: none;
+        }
+    }
+    #produits {
+        margin: 0;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        .produit {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction:column ;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 400px;
+            border-radius: 20px;
+            background-color: gray;
+            padding:30px;
+            .Pimg {
+                border-radius: 20px;
+                width: 200px;
+                height:200px;
+            }
+        }
+    }
+    #clients {
+        margin: 0;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        .client {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction:column ;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 300px;
+            border-radius: 20px;
+            background-color: gray;
+            padding:30px;
+            p {
+                margin-top: -10px;
+            }
+            .titre {
+                text-decoration: underline;
+                font-size: 20px;
+                margin-bottom:16px;
             }
         }
     }
