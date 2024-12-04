@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .bandehaut {
+        margin:0;
+        .barrenav {
+            list-style: none;
+            li {
+                float: left;
+                width: 8.5em;
+                list-style: none;
+                margin-left: 50px;
+    
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 2.5em;
+                    color: #3af430d7;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    box-shadow: 0 0 8px #13610d;
+                    border: 1.5px solid #13610d;
+                    p {
+                        font-size: 1.2em;
+                    }
+                }
+    
+                a:hover {
+                    transform: scale(1.15);
+                    transition-duration: 500ms;
+                    box-shadow: 0 0 10px #13610d;
+                }
+    
+            }
+        }
+    }
+}

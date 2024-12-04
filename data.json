@@ -1,0 +1,68 @@
+{
+    "nom": "SearchYourGame",
+    "slogan": "Vous n'aurez plus de problème pour trouver des jeux incroyables",
+    "listetypejeu": [
+        "Plateformer",
+        "Bac à sable",
+        "Rétro",
+        "RTS",
+        "2D"
+    ],
+    "listedescriptionjeu": [
+        "Jeu où le gameplay principal consiste à se déplacer sur des plateformes",
+        "Jeu où le joueur peut laisser libre cours à sa créativité.",
+        ""
+    ],
+    "produits": [
+        {
+            "titre": "Praliné croustillant",
+            "presentation": "Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un véritable délice pour les amateurs de chocolat et de fruits secs.",
+            "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/praline-croustillant.webp"
+        },
+        {
+            "titre": "Truffe au champagne",
+            "presentation": "Une ganache onctueuse et légèrement pétillante, enrobée de chocolat noir. Une saveur subtile et délicate, idéale pour les fêtes et les célébrations.",
+            "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/truffe-champagne.webp"
+        },
+        {
+            "titre": "Tablette de chocolat noir 70%",
+            "presentation": "Un chocolat noir intense et puissant, aux notes de cacao amer et de fruits secs. Un grand classique de la chocolaterie, à déguster seul ou à utiliser en cuisine.",
+            "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/tablette-chocolat-noir.webp"
+        },
+        {
+            "titre": "Coffret de chocolats assortis",
+            "presentation": "Un assortiment de chocolats fins, sélectionnés avec soin par nos chocolatiers. Un cadeau gourmand et raffiné, qui fera plaisir à coup sûr.",
+            "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/coffret-chocolats-assortis.webp"
+        },
+        {
+            "titre": "Chocolat chaud",
+            "presentation": "Un chocolat chaud onctueux et réconfortant, à déguster en toute occasion.",
+            "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/chocolat-chaud.webp"
+        },
+        {
+            "titre": "Mendiants",
+            "presentation": "Des chocolats aux fruits secs et fruits confits, pour une explosion de saveurs en bouche.",
+            "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/chocolatier/mendiants.webp"
+        }
+    ],
+    "clients": [
+        {
+            "nom": "Sophie",
+            "typePrestation": "Coffret cadeau personnalisé",
+            "commentaire": "Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient variées et originales, et la présentation était très soignée. Un grand merci au Palais du Chocolat pour ce cadeau parfait.",
+            "note": 5
+        },
+        {
+            "nom": "Antoine",
+            "typePrestation": "Mariage",
+            "commentaire": "Les chocolats du Palais du Chocolat ont été un véritable succès lors de notre mariage. Tout le monde a adoré les saveurs raffinées et les présentations élégantes. Un grand bravo à toute l'équipe.",
+            "note": 5
+        },
+        {
+            "nom": "Nicolas",
+            "typePrestation": "Achat en boutique",
+            "commentaire": "J'ai acheté une tablette de chocolat noir au Palais du Chocolat et je n'ai pas été déçu. Le chocolat était intense et puissant, avec des notes subtiles de fruits secs. Un vrai régal pour les papilles.",
+            "note": 4
+        }
+    ]
+}
