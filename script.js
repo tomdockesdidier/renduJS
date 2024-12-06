@@ -22,7 +22,7 @@ function start(nom, slogan, bouton) {
             <h1>${nom}</h1>
             <p>${slogan}</p>
         </div>
-        <button>${bouton}</button>
+        <a href=index.html>${bouton}</a>
         `;
 }
 
@@ -60,11 +60,12 @@ function avis(avis) {
     avis.forEach(element => {
         Lavis.innerHTML+=`
         <div class="client">
-            <h3>
-                ${element["nom"]}
-            </h3>
-            <p class="titre">${element["typePrestation"]}</p>
-            <p>${element["commentaire"]}</p>
+            <div>
+                <p class="titre">${element["typePrestation"]}</p>
+                <p>"${element["commentaire"]}"</p>
+                <p>${element["note"]}/5</p>
+            </div>
+            <p class="nom">${element["nom"]}</p>
         </div>
         `;
     });
